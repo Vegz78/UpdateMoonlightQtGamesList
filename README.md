@@ -22,7 +22,7 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 - Restarts EmulationStation to update the games list with new entries.
 - Game files already present and not previously created by this script are not overwritten.
 - Has a "list" parameter, like in ```./_UpdateMoonlightQtGamesList.sh list```, to only list the games on the chosen server from the command line.
-- Other scripts to quit the running game and start Moonlight-QT GUI from RetroPie are included.
+- Other scripts to quit the running game and start Moonlight-Qt GUI from RetroPie are included.
 
 # Usage
 
