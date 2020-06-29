@@ -12,9 +12,9 @@ Pardon any bugs, as I'm still noob in bash scripts.
 Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be very actively supported, updated or maintained.
 
 # Prerequisites
-- Raspberry Pi with Rapbian/Linux (but should work on most Linux devices and distros, as well)
+- Raspberry Pi 4 with Rapbian/Linux (but should work on most Linux devices and distros that can run Moonlight Qt, as well)
 - [Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt)
-- RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
+- Latest RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
 
 # Features
 - Automatically update the RetroPie Moonlight games list with streamable games for Moonlight Qt on the desired game stream server.
