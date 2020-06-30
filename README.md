@@ -41,7 +41,9 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 
 6 - Run the _UpdateMoonlightQtGamesList entry.
 
-Here are links to more detailed instructions for [installing Moonlight Qt on a Raspberry Pi 4](https://translate.googleusercontent.com/translate_c?depth=2&pto=aue&rurl=translate.google.com&sl=no&sp=nmt4&tl=en&u=https://retrospill.ninja/2020/06/moonlight-game-streaming-pa-raspberry-pi/&usg=ALkJrhiaZoo0TqVgJ5J2GNVEIDnXnmt1kw#Installasjon-Embedded) and setting it up in RetroPie(the latter article link will follow shortly, but [it is very similar to this](https://translate.googleusercontent.com/translate_c?depth=2&pto=aue&rurl=translate.google.com&sl=no&sp=nmt4&tl=en&u=https://retrospill.ninja/2020/06/moonlight-game-streaming-pa-raspberry-pi/&usg=ALkJrhiaZoo0TqVgJ5J2GNVEIDnXnmt1kw#Oppsett-Embedded)).
+Here are links to more detailed instructions for [installing Moonlight Qt on a Raspberry Pi 4](https://translate.google.no/translate?sl=no&tl=en&u=https%3A%2F%2Fretrospill.ninja%2F2020%2F06%2Fmoonlight-pc-pa-raspberry-pi-4%2F%23Installasjon) and setting it up in RetroPie(the latter article link will follow shortly, but [it is very similar to this](https://translate.google.no/translate?sl=no&tl=en&u=https%3A%2F%2Fretrospill.ninja%2F2020%2F06%2Fmoonlight-game-streaming-pa-raspberry-pi%2F%23Oppsett-Embedded)).
+
+ _UpdateMoonlightQtGamesList.sh of course also works from the command line, and with the argument ```list```, like in ```_UpdateMoonlightQtGamesList.sh list```, you can just list the games on the game streaming server, without updating the RetroPie menu entry files. The list of streamable games on the server is updated every time Moonlight Qt is run.
 
 # Example of sh script games menu in Emulationstation
 Edit the file /etc/emulationstation/es_systems.cfg as loosely inspired by [TechWizTime](https://github.com/TechWizTime/moonlight-retropie).
