@@ -12,7 +12,7 @@ Pardon any bugs, as I'm still noob in bash scripts.
 Feel free to copy, modify and use as you want. The script does what it's supposed to on my home system and won't be very actively supported, updated or maintained.
 
 # Prerequisites
-- Raspberry Pi 4 with Rapbian/Linux (but should work on most Linux devices and distros that can run Moonlight Qt, as well)
+- Raspberry Pi 4 with Raspbian/Linux (but should work on most Linux devices and distros that can run Moonlight Qt, as well)
 - [Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt)
 - Latest RetroPie/Emulationstation with [Steam or other games menu folders that execute .sh-scripts](#Example-of-sh-script-games-menu-in-Emulationstation)
 
@@ -22,21 +22,26 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 - Restarts EmulationStation to update the games list with new entries.
 - Game files already present and not previously created by this script are not overwritten.
 - Has a "list" parameter, like in ```./_UpdateMoonlightQtGamesList.sh list```, to only list the games on the chosen server from the command line.
-- Other scripts to quit the running game and start Moonlight-Qt GUI from RetroPie are included.
+- Other scripts to quit the running game and streaming session, start Moonlight-Qt GUI and wake the streaming server from RetroPie are included.
 
 # Usage
 
 1 - Make sure Moonlight Qt is installed, run at least once and paired to the desired game streaming server.
 
-2 - Download and copy the scripts into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight-qt". Make sure they're executable. <br>
+2 - Download and copy the scripts into your RetroPie Moonlight/Steam roms folder, typically "/home/pi/RetroPie/roms/moonlight-qt". Make a new ROMS folder if not already present. Make sure the script files are executable, ```sudo chmod +x *.sh```. <br>
     Alternatively, in same folder, run:<BR>
     ```git clone https://github.com/Vegz78/UpdateMoonlightQtGamesList && sudo chmod +x ./UpdateMoonlightQtGamesList/_*.sh```
+    Move the script files to the ROMS folder, e.g.: ```sudo mv *.sh /home/pi/RetroPie/roms/moonlight-qt``` 
 
 3 - Edit _UpdateMoonlightQtGamesList.sh with the desired global variables correct for your setup(server IP/Hostname, roms folder path etc.)
 
-4 - Start RetroPie and navigate to the Moonlight/Steam games list menu.
+4 - Add the [entry from the example below](https://github.com/Vegz78/UpdateMoonlightQtGamesList#example-of-sh-script-games-menu-in-emulationstation) to /etc/emulationstation/es_systems.cfg.
 
-5 - Run the _UpdateMoonlightQtGamesList entry.
+5 - Start RetroPie and navigate to the Moonlight/Steam games list menu.
+
+6 - Run the _UpdateMoonlightQtGamesList entry.
+
+Here are links to more detailed instructions for [installing Moonlight Qt on a Raspberry Pi 4](https://translate.googleusercontent.com/translate_c?depth=2&pto=aue&rurl=translate.google.com&sl=no&sp=nmt4&tl=en&u=https://retrospill.ninja/2020/06/moonlight-game-streaming-pa-raspberry-pi/&usg=ALkJrhiaZoo0TqVgJ5J2GNVEIDnXnmt1kw#Installasjon-Embedded) and setting it up in RetroPie(the latter article link will follow shortly, but [it is very similar to this](https://translate.googleusercontent.com/translate_c?depth=2&pto=aue&rurl=translate.google.com&sl=no&sp=nmt4&tl=en&u=https://retrospill.ninja/2020/06/moonlight-game-streaming-pa-raspberry-pi/&usg=ALkJrhiaZoo0TqVgJ5J2GNVEIDnXnmt1kw#Oppsett-Embedded)).
 
 # Example of sh script games menu in Emulationstation
 Edit the file /etc/emulationstation/es_systems.cfg as loosely inspired by [TechWizTime](https://github.com/TechWizTime/moonlight-retropie).
