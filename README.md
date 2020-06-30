@@ -24,7 +24,7 @@ Feel free to copy, modify and use as you want. The script does what it's suppose
 - Has a "list" parameter, like in ```./_UpdateMoonlightQtGamesList.sh list```, to only list the games on the chosen server from the command line.
 - Other scripts to quit the running game and streaming session, start Moonlight-Qt GUI and wake the streaming server from RetroPie are included.
 
-# Usage
+# Setup and usage
 
 1 - Make sure Moonlight Qt is installed, run at least once and paired to the desired game streaming server.
 
