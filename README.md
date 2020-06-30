@@ -60,3 +60,6 @@ Add something like this:
     <theme>steam</theme>
   </system>
 ```
+
+# Images
+![alt text](https://retrospill.ninja/wp-content/uploads/2020/06/retro2png_17.jpeg)
