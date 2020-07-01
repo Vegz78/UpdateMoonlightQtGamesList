@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# Global variables, leave empty those you do not want to use
+# Global variables, required for script to work
 GSTREAMHOSTNO="1" #Number of the game streaming server from the Moonlight.conf that you want to use (default=1)
-GLOBALSETTINGS="Yes" #"Yes" to use global settings from GUI or "No"/empty to use local settings below 
 MOONLIGHT_PATH="/home/pi/RetroPie/roms/moonlight-qt" #Path to RetroPie Moonlight ROMS folder
 STREAMINGHOST="$(cat ~/.config/Moonlight\ Game\ Streaming\ Project/Moonlight.conf | grep "^$GSTREAMINGHOSTNO" | grep "\\localaddress=" | cut -d "=" -f2 | sed "s/ *$//g")"
-#STREAMINGHOST="192.168.0.10" #Game streaming server's IP adress or hostname
+#STREAMINGHOST="192.168.0.10" #Game streaming server's IP adress or hostname, optionally set manually here instead of automatically above
+GLOBALSETTINGS="Yes" #"Yes" to use global settings from GUI settings or "No"/empty to use local settings below
+
+# Optional global variables below, only relevant to set if you have set the above GLOBALSETTINGS variable to "No"/empty.
+# Leave empty if you don't want to use or want du use default values
 RESOLUTION="1080" #720/1080/4K
 FPS="60" #30/60/120
 BITRATE="" #Bitrate in Kbps
