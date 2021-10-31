@@ -1,4 +1,6 @@
 # UpdateMoonlightQtGamesList
+([For a similar solution for Moonlight Embedded, see here](https://github.com/Vegz78/UpdateMoonlightGamesList))
+
 A script to automatically update the RetroPie Moonlight games list with streamable games for Moonlight Qt from the desired game stream server.
 ![alt text](https://retrospill.ninja/wp-content/uploads/2020/06/retro2png_17.jpeg)
 This script can be run directly from RetroPie in the Moonlight/Steam games list menu to automatically update/sync the games list with streamable games for Moonlight Qt on a desired chosen game stream server. 
